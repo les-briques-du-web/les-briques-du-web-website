@@ -1,0 +1,252 @@
+/**
+ * @file Defines styles specific to the home page
+ * Custom properties are set in `_includes/shortcodes/css-root.js`
+ * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/--*CSS Custom Properties on MDN}
+ */
+
+body {  
+  padding: 0;
+  margin: var(--toolbar-height) 0 0;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, serif;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+main {  
+  flex-grow: 1;
+}
+
+main img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 var(--space-1) var(--header-background-color),
+    0 var(--space-2) var(--space-1) var(--darken-3);
+  background: var(--header-background-color);
+  color: var(--header-text-color);
+}
+header .top-content {
+  max-width: var(--theJdrSize);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  height: calc(var(--toolbar-height) - (2 * var(--space-2)));
+  max-width: 180px;
+}
+header label {
+  display: none;
+  opacity: 0.5;
+  padding: 0.1em;
+  border: var(--space-2) solid transparent;
+  outline-offset: var(--space-2);
+}
+header label .icon {
+  --size: 1.5rem;
+  height: var(--size, 1.5rem);
+  width: var(--size, 1.5rem);
+}
+header label .icon-menu {
+  display: block;
+}
+header label .icon-close {
+  display: none;
+}
+header label:hover,
+header label:focus {
+  opacity: 1;
+  outline: thin dotted currentColor;
+}
+header input[type="checkbox"]:checked ~ label .icon-menu {
+  display: none;
+}
+header input[type="checkbox"]:checked ~ label .icon-close {
+  display: block;
+}
+header input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+header nav li {
+  opacity: 0.6;
+  transition: all var(--animation);
+  border-bottom: thin solid transparent;
+  border-radius: 5%;
+}
+header nav li.active {
+  opacity: 1;
+  border-bottom-color: currentColor;
+}
+
+header nav a {
+  display: block;
+  text-transform: uppercase;
+  padding: 0 var(--space-3);
+  text-decoration: none;
+  line-height: calc(var(--toolbar-height) - (4 * var(--space-2)));
+  color: inherit;
+  font-weight: 200;
+}
+header nav a svg {
+  max-width: 3ch;
+}
+header nav nav a:focus,
+header nav nav a:hover {
+  text-shadow: var(--extruded-dark);
+  opacity: 0.75;
+}
+
+.jumbo {
+  position: relative;
+  height: 25em;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+.jumbo .jumbo-cover {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(./img/backgrounds/les-briques-du-web.jpg);
+}
+
+.jumbo .jumbo-overlay {  
+  background-color: var(--jumbo-overlay-color);
+  transition: opacity var(--jumbo-overlay-transition, 0.4s);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6 !important;
+}
+
+.jumbo .inner-wrapper {
+  position: relative;
+  color: var(--jumbo-text, white);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+
+.jumbo .inner-wrapper .inner {
+  padding: var(--space-4);
+  color: var(--primary-txt);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbo .inner-wrapper .inner h2 {
+  font-size: 1.75rem;
+  margin: var(--space-3) 0;
+  font-weight: 600;
+}
+
+.jumbo .inner-wrapper .inner h3 {
+  font-size: 1.8rem;
+  margin: var(--space-3) 0;
+  font-size: 1.25em;
+  overflow-wrap: break-word;
+}
+
+.jumbo .scroll-down {
+  position: relative;
+  color: var(--base, white);
+}
+
+.jumbo .scroll-down .icon {
+  height: 2.5em;
+  width: 1.5em;
+}
+
+.jumbo img.jumbo-logo {
+  width: min(350px, 80%);
+}
+
+@keyframes scrollDownMove {
+  from {
+    transform: translateY(-.15em);
+  }
+  to {
+    transform: translateY(.65em);
+  }
+}
+
+
+.icon {
+  --size: 1em;
+  height: var(--size, 1em);
+  min-width: var(--size, 1em);
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: var(--space-1);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+@media (max-width: 60em) {
+  header label {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav {
+    display: none;
+    width: 100%;
+    padding: 0 1em;
+    background: var(--primary);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
