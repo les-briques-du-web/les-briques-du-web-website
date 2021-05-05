@@ -332,6 +332,9 @@ article.card .card_header > h2 >a  {
   text-decoration: none;
 }
 
+article.card .card_header > p {
+  text-align: left;
+}
 
 article.card .filler {
   display: flex;
