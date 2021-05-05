@@ -17,4 +17,5 @@
  export default {
   anchor: 'https://anchor.fm/les-rdv-des-speakers',
   twitter: 'https://twitter.com/LesBriquesDuWeb',
+  youtube: 'https://www.youtube.com/watch?v=m-i8f-a6K4Y&list=PLEkzErZ5n2i610Wmi2tstCoTdhKyJafqY'
 }
