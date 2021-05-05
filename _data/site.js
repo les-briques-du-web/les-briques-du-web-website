@@ -71,6 +71,9 @@ export default {
       // The landing page for your archive of posts
       url: '/episodes'
     },
+    team: {
+      url: '/team',
+    },
     /*
      * Options for displaying dates in this locale
      * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString `toLocaleDateString()` on MDN}

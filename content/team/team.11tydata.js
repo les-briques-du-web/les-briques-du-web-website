@@ -4,8 +4,8 @@
  */
 
 /**
- * Directory data module for pages
- * @module content/pages
+ * Directory data module for team
+ * @module content/team
  * @see {@link https://www.11ty.dev/docs/data-template-dir/ Template and directory data files in 11ty}
  * @see {@link  https://www.11ty.dev/docs/permalinks/ Permalinks in 11ty}
  */
@@ -14,9 +14,9 @@ export default {
   // Note: The permalink value uses Nunjucks/Liquid syntax;
   // a future version of 11ty may allow for JavaScript template literals
   eleventyComputed: {
-    permalink: data => `/episodes/${data.page.fileSlug}/index.html`
+    permalink: data => `/team/${data.page.fileSlug}/index.html`
   },
   tags: [
-    'episodes'
+    'team'
   ]
 }

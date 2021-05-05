@@ -24,6 +24,7 @@ import paginationNav from './pagination-nav.js'
 import siteFooter from './site-footer.js'
 import siteHeader from './site-header.js'
 import socialMeta from './social-meta.js'
+import team from './team.js'
 import titleTag from './title-tag.js'
 
 /**
@@ -57,6 +58,7 @@ export default function (eleventyConfig) {
   siteHeader(eleventyConfig)
   socialMeta(eleventyConfig)
   titleTag(eleventyConfig)
+  team(eleventyConfig)
   
   return
 }

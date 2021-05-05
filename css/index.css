@@ -326,7 +326,7 @@ section.grid {
 
 article.card {
   display: block;
-  max-width: min(calc(300px - 20px - 4px), 100%);
+  width: min(calc(300px - 20px - 4px), 100%);
   height: calc(300px - 20px - 4px);
   border: 0px;
   border-radius: 5px;
@@ -335,7 +335,7 @@ article.card {
 }
 
 article.card > .card_content {
-  max-width: min(calc(300px - 20px - 4px), 100%);
+  width: min(calc(300px - 20px - 4px), 100%);
   height: calc(300px - 20px - 4px);
   overflow: hidden;
   display: flex;
@@ -371,3 +371,10 @@ article.card .episode {
   font-weight: 700;
   font-size: small;
 }
+
+article.team .team_member {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 125px;
+} 
