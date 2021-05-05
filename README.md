@@ -1,5 +1,7 @@
 # Website for *Les Briques du Web*
 
+🚧 Still a work in progress 🚧
+
 
 ## An [Eleventy](https://11ty.dev/) site
 

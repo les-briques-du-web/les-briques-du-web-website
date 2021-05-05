@@ -10,13 +10,13 @@
  * @see {@link  https://www.11ty.dev/docs/permalinks/ Permalinks in 11ty}
  */
 export default {
-  layout: 'layouts/page',
+  layout: 'layouts/pages',
   // Note: The permalink value uses Nunjucks/Liquid syntax;
   // a future version of 11ty may allow for JavaScript template literals
   eleventyComputed: {
     permalink: data => `/${data.page.fileSlug}/index.html`
   },
   tags: [
-    'pages', 
+    'episodes'
   ]
 }

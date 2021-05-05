@@ -1,6 +1,5 @@
 /**
- * @file Defines the chained template for home page
- * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * @file Defines the chained template for episodes 
  * @author Horacio Gonzalez <horacio.gonzalez@gmail.com>
  * @see {@link https://www.11ty.dev/docs/layouts/#layout-chaining Layout chaining in 11ty}
  */
@@ -9,7 +8,7 @@
  * Acts as front matter in JavaScript templates
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
-export var data = {
+ export var data = {
   layout: 'layouts/base'
 }
 
@@ -23,6 +22,6 @@ export var data = {
  */
 export function render(data) {
   return `
-    ${this.jumbo(data)}
+    ${data}
   `
 }

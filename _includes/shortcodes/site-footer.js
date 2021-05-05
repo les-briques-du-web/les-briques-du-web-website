@@ -22,8 +22,10 @@ export default eleventyConfig =>
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
   eleventyConfig.addShortcode('siteFooter', function (data) {
-    return `<footer id="site_footer">
+    return `<footer>
+      <div class="content">
         <p>${this.copyrightNotice(data)}</p>
         <p>${this.colophon(data)}</p>
+      </div>
       </footer>`
   })

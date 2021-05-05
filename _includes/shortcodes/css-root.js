@@ -37,11 +37,11 @@ export default eleventyConfig =>
       --space-3: .5rem;
       --space-4: 1rem;
       /* Named Properties */
-      --background-color: var(--grayscale-800);
-      --text-color: var(--grayscale-100);
+      --background-color: var(white);
+      --text-color: var(--grayscale-800);
       --gray: var(--grayscale-600);
       --border: 2px dashed var(--gray);
-      --base-unit: 0em;
+      --base-unit: 1em;
       --header-background-color: var(--grayscale-800);
       --header-text-color: var(--grayscale-100);
       --toolbar-height: 5rem;

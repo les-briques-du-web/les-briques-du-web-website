@@ -28,11 +28,25 @@ export default eleventyConfig =>
       `<article class="card" style="${(item.data.highlight !== undefined && item.data.highlight === true)
         ? 'padding:var(--base-unit);border:var(--border);' : ''}">
         <div class="card_content">
-          <time>${this.pageDate(item.data)}</time>
-          <h2 class="no-margin">
-            <a href="${item.data.page.url}">${item.data.title}</a>
-          </h2>
-          <p class="no-margin">${item.data.description}</p>
+          <div class="card_header">
+            <div class="episode">
+              <div class="number"> 
+                ${item.data.name}
+              </div>
+              <time>${this.pageDate(item.data)}</time>
+            </div>
+            <h2 class="no-margin">
+              <a href="${item.data.page.url}"> 
+                 ${item.data.title}
+              </a>
+            </h2>
+            <p class="no-margin">${item.data.subtitle}</p>
+          </div>
+          <div class="filler">          
+            <a href="${item.data.page.url}">
+              <img src="${data.site.baseUrl}img/${item.data.name}/card.png">
+            </a>
+          </div>
         </div>
       </article>`).join('')}
     </section>`

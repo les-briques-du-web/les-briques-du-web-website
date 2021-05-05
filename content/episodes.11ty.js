@@ -9,19 +9,19 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
  export var data = {
-  title: 'Los Archivos de Drowstar',
-  navTitle: 'Archivos',
+  title: 'Les épisodes',
+  navTitle: 'Épisodes',
   tags: 'nav',
   weight: 3,
   layout: 'layouts/archive',
   templateEngineOverride: '11ty.js',
   pagination: {
-    data: 'collections.posts',
+    data: 'collections.episodes',
     size: 20,
     alias: 'posts',
     reverse: true,
   },
-  permalink: data => `${data.site[data.locale].postsArchive.url }/${data.pagination.pageNumber > 0
+  permalink: data => `${data.site[data.locale].episodesArchive.url }/${data.pagination.pageNumber > 0
     ? `page-${data.pagination.pageNumber}/` 
     : ''}index.html`,
 }

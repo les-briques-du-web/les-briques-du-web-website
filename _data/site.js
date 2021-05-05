@@ -61,15 +61,15 @@ export default {
       // The aria-label for the last page within a pagination navigation
       lastLabel: 'Dernière page'
     },
-    // Options for your archive of posts,
+    // Options for your archive of episodes,
     // used in _includes/layout/archive.11ty.js
-    postsArchive: {
+    episodesArchive: {
       // Heading for your most recent posts, used on home page
-      headline: 'Derniers articles',
+      headline: 'Derniers épisodes',
       // Invite the user to visit your archive of posts, used on home page
       prompt: '… visiter des archives 👀',
       // The landing page for your archive of posts
-      url: '/blog'
+      url: '/episodes'
     },
     /*
      * Options for displaying dates in this locale
