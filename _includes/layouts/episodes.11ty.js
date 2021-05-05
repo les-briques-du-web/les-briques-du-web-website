@@ -22,6 +22,20 @@
  */
 export function render(data) {
   return `
-    ${data}
+    <article>
+      <header class="article-header">
+        <div class="episode">
+          <div class="number"> 
+            ${data.name}
+          </div>
+          <time>${this.pageDate(data)}</time>
+        </div>
+        <h1>${data.title}</h1>
+        <h2>${data.subtitle}</h2>
+      </header>
+      <div>
+        <img src="${data.site.baseUrl}img/${data.name}/card.png">
+      </div>
+    </article>
   `
 }

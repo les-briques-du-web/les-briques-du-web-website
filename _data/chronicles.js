@@ -17,14 +17,22 @@
  export default {
    meteo_du_web: {
      name: "La Météo du Web",
+     emoji: "☀️", 
    },
    entretien: {
     name: "L'Entretien",
+    emoji: "🎙️", 
    },
    focus_api: {
      name: "Le Focus API",
+     emoji: "⁉️", 
+   },
+   weekly_project: {
+      name:"Le Projet de la Semaine",
+      emoji: "🛠️",
    },
    annedocte_historique: {
      name: "L'Annecdote Historique",
+     emoji: "📜", 
    }
 }
