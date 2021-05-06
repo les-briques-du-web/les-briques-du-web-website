@@ -22,3 +22,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: _site
+          keep_files: true
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: RdvSpeakers/rdv-speakers         
