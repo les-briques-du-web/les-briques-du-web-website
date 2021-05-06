@@ -30,7 +30,9 @@ export default eleventyConfig =>
         <div class="card_content">
           <div class="card_header">
             <h2 class="no-margin">
-              ${item.data.name}
+              <a href="${item.data.tags && item.data.tags.indexOf('guests') >= 0 ? l10n.guests.url : l10n.team.url}/${item.data.key}/">
+                ${item.data.name}
+              </a>
             </h2>
             ${
               item.data.company  
@@ -38,8 +40,10 @@ export default eleventyConfig =>
               : ''
             }
           </div>
-          <div class="filler">    
-            <img class="team_member" src="${data.site.baseUrl}img/${item.data.photoURL}">
+          <div class="filler">   
+            <a href="${l10n.team.url}/${item.data.key}/"> 
+              <img class="team_member" src="${data.site.baseUrl}img/${item.data.photoURL}">
+            </a>
           </div>
           ${item.data.socials ? `  
             <div class="socials">
