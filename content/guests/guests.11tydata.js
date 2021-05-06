@@ -14,7 +14,7 @@ export default {
   // Note: The permalink value uses Nunjucks/Liquid syntax;
   // a future version of 11ty may allow for JavaScript template literals
   eleventyComputed: {
-    permalink: data => `${data.site.baseUrl}/guests/${data.page.fileSlug}/index.html`
+    permalink: data => `/guests/${data.page.fileSlug}/index.html`
   },
   tags: [
     'guests'
