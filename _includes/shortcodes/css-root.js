@@ -31,6 +31,7 @@ export default eleventyConfig =>
       --grayscale-600: ${data.colors.grayscale[600].hex};
       --grayscale-800: ${data.colors.grayscale[800].hex};
       --white: ${data.colors.grayscale.white.hex};
+      --redish: #800000;
       /* Spaces */
       --space-1: .125rem;
       --space-2: .25rem;

@@ -31,7 +31,7 @@
       name:"Le Projet de la Semaine",
       emoji: "🛠️",
    },
-   annedocte_historique: {
+   anecdocte_historique: {
      name: "L'Annecdote Historique",
      emoji: "📜", 
    }

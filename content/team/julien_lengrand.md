@@ -1,6 +1,6 @@
 ---
 key: julien_lengrand
-name: Julien Lengrand Lambert
+name: Julien Lengrand-Lambert
 feature: true
 company:  ING
 city: Pays-Bas

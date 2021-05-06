@@ -398,3 +398,94 @@ article.team .socials a {
   padding-right: 0.5em;
   overflow: hidden;
 }
+
+article.episode_details {
+
+}
+
+article.episode_details .chronicles a,
+article.episode_details .chronicles a:visited {
+  color: var(--redish);
+}
+
+article.episode_details .chronicles ul {
+  display: block;
+  list-style: none;
+}
+
+article.episode_details .chronicles li {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+article.episode_details .chronicles h2 {
+  margin-bottom: 2rem;
+}
+
+article.episode_details .chronicles li h3.chronicle_name {
+  margin-bottom: 1rem;
+  margin-left: -2rem;
+}
+
+article.person_details {
+}
+
+article.person_details .person_data h1 {
+  font-size: 2rem;
+}
+
+article.person_details .photo {
+  float: right;
+  margin-left: 2rem;
+}
+
+article.person_details .photo img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+} 
+
+article.person_details a,
+article.person_details a:visited {
+  color: var(--redish);
+}
+
+article.person_details .socials {
+}
+
+article.person_details .socials a {
+  display: inline-flex;
+  margin: var(--space-1);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-decoration: none;
+  width: 2.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  overflow: hidden;
+}
+
+@media (max-width: 30em) {
+  article.person_details .photo {
+    float: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-left: 0;
+  }  
+  article.person_details .person_data {
+    float: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 2rem;
+  }  
+  article.person_details .socials {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+}
