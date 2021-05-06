@@ -22,7 +22,7 @@
     alias: 'member',
     reverse: false,
   },
-  permalink: data => `${data.site[data.locale].guests.url }/${data.pagination.pageNumber > 0
+  permalink: data => `${data.site.baseUrl}${data.site[data.locale].guests.url }/${data.pagination.pageNumber > 0
     ? `page-${data.pagination.pageNumber}/` 
     : ''}index.html`,
 }

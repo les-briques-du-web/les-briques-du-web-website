@@ -61,7 +61,7 @@ export function render(data) {
                   ${item.presenters ? 
                   `<p>Présenté par ${item.presenters
                     .map((presenter) =>{
-                      return `<a href="${l10n.team.url}/${presenter}/">${
+                      return `<a href="${data.baseUrl}${l10n.team.url}/${presenter}/">${
                         teamMembers
                           .find((member) => member.key == presenter) ?
                         teamMembers
@@ -73,7 +73,7 @@ export function render(data) {
                   ${item.guests ? 
                   `<p>Avec ${item.guests
                     .map((aGuest) =>{
-                      return `<a href="${l10n.guests.url}/${aGuest}/">${
+                      return `<a href="${data.baseUrl}${l10n.guests.url}/${aGuest}/">${
                         guestList
                           .find((guest) => guest.key == aGuest) ?
                         guestList
