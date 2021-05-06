@@ -45,7 +45,7 @@ export function render(data) {
         <img src="${data.site.baseUrl}img/${data.name}/card.png">
       </div>
       <div class="chronicles">
-        <h2>Au programme de l'émission</h2>
+        <p>Au programme de l'émission</p>
         <ul>
         ${
           data.chronicles ? data.chronicles
