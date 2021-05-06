@@ -19,9 +19,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:        
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
           publish_dir: _site
           keep_files: true
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: RdvSpeakers/rdv-speakers         
