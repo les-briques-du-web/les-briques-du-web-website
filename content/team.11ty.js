@@ -2,6 +2,7 @@
 /**
  * @file Defines the chained layout for the archive page
  * @see {@link https://www.11ty.dev/docs/layouts/#layout-chaining Layout chaining in 11ty}
+ * @author Horacio Gonzalez <horacio.gonzalez@gmail.com>
  */
 
 /**

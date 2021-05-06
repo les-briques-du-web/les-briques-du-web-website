@@ -378,3 +378,23 @@ article.team .team_member {
   height: 150px;
   border-radius: 125px;
 } 
+
+article.team .socials {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+article.team .socials a {
+  display: inline-flex;
+  margin: var(--space-1);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-decoration: none;
+  width: 1.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  overflow: hidden;
+}

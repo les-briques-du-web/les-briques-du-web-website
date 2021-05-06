@@ -74,6 +74,9 @@ export default {
     team: {
       url: '/team',
     },
+    guests: {
+      url: '/guests',
+    },
     /*
      * Options for displaying dates in this locale
      * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString `toLocaleDateString()` on MDN}

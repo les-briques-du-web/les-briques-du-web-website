@@ -1,6 +1,6 @@
 /**
  * @file Defines a shortcode for displaying an archive of content
- * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * @author Horacio Gonzalez <horacio.gonzalez@gmail.com>
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  */
 
@@ -12,7 +12,7 @@
 export default eleventyConfig =>
 
   /**
-   * A section of articles
+   * The team
    * @method
    * @name archive
    * @param {Object} data 11ty’s data object
@@ -41,6 +41,13 @@ export default eleventyConfig =>
           <div class="filler">    
             <img class="team_member" src="${data.site.baseUrl}img/${item.data.photoURL}">
           </div>
+          ${item.data.socials ? `  
+            <div class="socials">
+              ${item.data.socials.map((social) => {
+                return this.socialIcons(social);
+              }).join(' ')}
+            </div>` : ''
+          }
         </div>
       </article>`).join('')}
     </section>`
