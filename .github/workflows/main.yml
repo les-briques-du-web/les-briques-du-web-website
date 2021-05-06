@@ -22,6 +22,5 @@ jobs:
           deploy_key: ${{ secrets.RDV_SPEAKERS }}
           publish_branch: gh-pages
           publish_dir: _site
-          keep_files: true
           destination_dir: les-briques-du-web
           external_repository: RdvSpeakers/rdv-speakers         
