@@ -24,3 +24,4 @@ jobs:
           publish_dir: _site
           destination_dir: les-briques-du-web
           external_repository: RdvSpeakers/rdv-speakers         
+
