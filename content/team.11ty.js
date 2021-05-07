@@ -22,9 +22,12 @@
     alias: 'member',
     reverse: false,
   },
-  permalink: data => `${data.site[data.locale].team.url }/${data.pagination.pageNumber > 0
-    ? `page-${data.pagination.pageNumber}/` 
-    : ''}index.html`,
+  permalink: function(data) {
+    return this.url(
+      `${data.site[data.locale].team.url }/${data.pagination.pageNumber > 0
+      ? `page-${data.pagination.pageNumber}/` 
+      : ''}index.html`);
+  }
 }
 
 /**

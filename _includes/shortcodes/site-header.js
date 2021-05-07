@@ -30,7 +30,7 @@ export default eleventyConfig =>
       <div class="top-content">
         <div class="logo">
           <a href="${data.site.baseUrl}">
-            <img src="${data.site.baseUrl}${data.site.logo.url}" alt="logo">
+            <img src="${data.site.pathPrefix}/${data.site.logo.url}" alt="logo">
           </a>
         </div>
 

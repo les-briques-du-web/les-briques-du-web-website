@@ -25,7 +25,7 @@ export default eleventyConfig =>
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    * @see {@link https://www.w3.org/TR/wai-aria/#aria-label WAI-ARIA specification for `aria-label` property}
    */
-  eleventyConfig.addShortcode('nav', (collection, page, classes, ariaLabel) => {
+  eleventyConfig.addShortcode('nav', function(collection, page, classes, ariaLabel) {
     var classList = []
     if (classes !== undefined) {
       if (typeof classes === 'string') {
@@ -42,7 +42,7 @@ export default eleventyConfig =>
           <ul>
             ${collection
               .sort((a, b) => a.data.weight - b.data.weight)
-              .map(item => `<li><a href="${item.data.url ? item.data.url : item.url}" 
+              .map(item => `<li><a href="${this.url(`${item.data.url ? item.data.url : item.url}`)}" 
                 ${page.url === item.url ? 'aria-current="page"' : ''}>${item.data.navTitle
                   ? item.data.navTitle
                   : item.data.title

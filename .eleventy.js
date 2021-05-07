@@ -80,7 +80,7 @@ export default function (eleventyConfig) {
   // then you can uncomment this return statement
   // and change the values for one or more of these directories
   // (defaults shown).
-  /*
+  
   return {
     dir: {
       input: '.',
@@ -88,7 +88,7 @@ export default function (eleventyConfig) {
       data: '_data',
       output: '_site'
     },
-    pathPrefix: '/',
+    pathPrefix: '/les-briques-du-web',
   }
-  */
+  
 }

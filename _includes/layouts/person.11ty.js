@@ -24,7 +24,7 @@ export function render(data) {
   return `
     <article class="person_details">
       <div class="photo">
-        <img class="team_member" src="${data.site.baseUrl}img/${data.photoURL}">
+        <img class="team_member" src="${this.url(`/img/${data.photoURL}`)}">
       </div>
       <div class="person_data">
         <h1>${data.name}</h1>

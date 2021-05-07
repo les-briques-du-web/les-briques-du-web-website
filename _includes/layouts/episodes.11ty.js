@@ -42,7 +42,7 @@ export function render(data) {
         <h2>${data.subtitle}</h2>
       </header>
       <div class="card">
-        <img src="${data.site.baseUrl}img/${data.name}/card.png">
+        <img src="${this.url(`/img/${data.name}/card.png`)}">
       </div>
       <div class="chronicles">
         <p>Au programme de l'émission</p>
@@ -61,7 +61,7 @@ export function render(data) {
                   ${item.presenters ? 
                   `<p>Présenté par ${item.presenters
                     .map((presenter) =>{
-                      return `<a href="${data.baseUrl}${l10n.team.url}/${presenter}/">${
+                      return `<a href="${this.url(`/${l10n.team.url}/${presenter}/`)}">${
                         teamMembers
                           .find((member) => member.key == presenter) ?
                         teamMembers
@@ -73,7 +73,7 @@ export function render(data) {
                   ${item.guests ? 
                   `<p>Avec ${item.guests
                     .map((aGuest) =>{
-                      return `<a href="${data.baseUrl}${l10n.guests.url}/${aGuest}/">${
+                      return `<a href="${this.url(`${l10n.guests.url}/${aGuest}/`)}">${
                         guestList
                           .find((guest) => guest.key == aGuest) ?
                         guestList

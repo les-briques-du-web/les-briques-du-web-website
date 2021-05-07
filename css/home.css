@@ -7,7 +7,7 @@
 
 .jumbo {
   position: relative;
-  height: 25em;
+  height: 20em;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -83,7 +83,7 @@
 }
 
 .jumbo img.jumbo-logo {
-  width: min(350px, 80%);
+  width: min(350px, 60%);
 }
 
 @keyframes scrollDownMove {
@@ -103,4 +103,19 @@
   display: inline-block;
   background-repeat: no-repeat;
   margin-right: var(--space-1);
+}
+
+.nextEpisode {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.nextEpisode h2 {
+  margin-bottom: 2rem;
+}
+.nextEpisode img {
+  max-width: min(90%, 1200px);
+  margin: 0;
 }

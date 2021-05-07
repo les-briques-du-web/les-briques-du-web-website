@@ -17,9 +17,8 @@
  */
 export default {
   // The root for the site domain (without a trailing slash)
-  baseUrl: (process.env.ELEVENTY_ENV == 'production') 
-      ? '/les-briques-du-web/'
-      : '/',
+  baseUrl: 'https://rdv-speakers.fr/les-briques-du-web',
+  pathPrefix: '/les-briques-du-web',
   // Uses this locale when one is not set in content/content.11tydata.js
   defaultLocale: 'fr',
   // Localized strings and other options for Spanish (es)
