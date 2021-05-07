@@ -43,7 +43,19 @@ export function render(data) {
       </header>
       <div class="card">
         <img src="${this.url(`/img/${data.name}/card.png`)}">
+        ${data.references ? `
+        <div class="links">
+        ${data.references
+          .map((ref) => {
+            return `<div class="link"><p>${ref.msg}</p> ${this.socialIcons(ref)}</div>`;
+          }).join('\n') }
+        </div>
+      ` : ''}
       </div>
+
+      
+
+
       <div class="chronicles">
         <p>Au programme de l'émission</p>
         <ul>

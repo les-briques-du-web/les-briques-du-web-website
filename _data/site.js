@@ -27,6 +27,7 @@ export default {
     url: 'img/logos/logo.png'
   },
   fr: {
+    title: 'Les Briques du Web',
     // French as used in France
     locale: 'fr',
     // The subtitle, slogan, or catchphrase for your site,
@@ -34,7 +35,7 @@ export default {
     tagline: "Emission bimensuelle autour du développement web",
     // Puncuation between a title and subtitle,
     // used in _includes/shortcodes/title-tag
-    separator: ' 🎲 ',
+    separator: ' - ',
     // The link text for skip-to-content lins, used by screen readers
     skipToContent: 'Aller au contenu',
     // The link text to invite users to edit a page in the project Git repository

@@ -399,12 +399,12 @@ article.team .socials a {
   overflow: hidden;
 }
 
-article.episode_details {
-
+article.episode_details .card {
+  max-width: 840px;
 }
 
-article.episode_details .chronicles a,
-article.episode_details .chronicles a:visited {
+article.episode_details a,
+article.episode_details a:visited {
   color: var(--redish);
 }
 
@@ -426,6 +426,42 @@ article.episode_details .chronicles li h3.chronicle_name {
   margin-bottom: 1rem;
   margin-left: -2rem;
 }
+
+article.episode_details .links {
+  display: flex;
+  flex-flow: row;  
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+}
+
+article.episode_details .links > .link {
+  display: flex;
+  flex-flow: row;  
+  align-items: center;
+}
+
+article.episode_details .links > .link:not(:last-child) {
+  margin-right: 2rem;
+}
+
+article.episode_details .links > .link > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+article.episode_details .links  > .link a.social {
+  display: inline-flex;
+  margin: var(--space-1);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-decoration: none;
+  width: 2.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  overflow: hidden;
+}
+
 
 article.person_details {
 }
