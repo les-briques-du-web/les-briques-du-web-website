@@ -3,7 +3,7 @@ speaker: true
 key: romuald_priol
 name: Romuald Priol
 feature: true
-company: ''
+company: 'Peaks'
 city: France
 photoURL: guests/romuald_priol.jpg
 socials:
