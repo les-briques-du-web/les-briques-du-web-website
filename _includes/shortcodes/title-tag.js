@@ -23,6 +23,7 @@ export default eleventyConfig =>
   eleventyConfig.addShortcode('titleTag', data => {
     var l10n = data.site[data.locale]
     // Use a different `title` on the home page
+
     return `<title>
       ${data.page.url !== '/'
         ? `${l10n.title}${l10n.separator}${data.title}`
