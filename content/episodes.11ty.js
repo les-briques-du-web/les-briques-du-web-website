@@ -23,10 +23,9 @@
     reverse: true,
   },
   permalink: function(data) {
-    return this.url(
-      `${data.site[data.locale].episodesArchive.url }/${data.pagination.pageNumber > 0
+    return `/episodes/${data.pagination.pageNumber > 0
       ? `page-${data.pagination.pageNumber}/` 
-      : ''}index.html`);
+      : ''}index.html`;
   }
 }
 

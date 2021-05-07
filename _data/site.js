@@ -68,7 +68,7 @@ export default {
       // Invite the user to visit your archive of posts, used on home page
       prompt: '… visiter des archives 👀',
       // The landing page for your archive of posts
-      url: '/episodes'
+      url: 'episodes'
     },
     team: {
       url: 'team',
