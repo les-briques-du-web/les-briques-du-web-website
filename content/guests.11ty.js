@@ -10,8 +10,8 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
  export var data = {
-  title: "Nos hôtes",
-  navTitle: 'hôtes',
+  title: "Nos convives",
+  navTitle: 'convives',
   tags: 'nav',
   weight: 3,
   layout: 'layouts/guests',
