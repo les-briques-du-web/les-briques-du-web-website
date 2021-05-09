@@ -115,7 +115,7 @@
 .nextEpisode h2 {
   margin-bottom: 2rem;
 }
-.nextEpisode img {
+.nextEpisode a {
   max-width: min(90%, 1200px);
   margin: 0;
 }

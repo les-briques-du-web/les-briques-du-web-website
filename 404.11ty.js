@@ -33,8 +33,8 @@ export function render(data) {
 
   ### Autres options
 
-  * [😇 Vous plaindre à ${data.author.name.givenName} en Twitter](${data.author.social.accounts.find(account => account.name === 'Twitter').url})
-  * [📥 Poster un issue sur Git](${data.pkg.bugs.url})
-  * [🏡 Revenir à la page d'accueil](${data.pkg.bugs.url})
+  * [😇 Vous plaindre à ${data.author.name.givenName} ou l'équipe sur Twitter](${data.links.twitter})
+  * [📥 Poster une issue sur Git](${data.pkg.bugs.url})
+  * [🏡 Revenir à la page d'accueil](${data.pkg.homepage})
   `;
 }

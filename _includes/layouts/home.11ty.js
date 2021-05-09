@@ -27,7 +27,9 @@ export function render(data) {
 
     <div class="nextEpisode">    
       <h2 >Prochain épisode:</h2>
-      <img class="nextEpisode" src="${this.url(`/img/next/card.png`)}" alt="Prochain épisode" />
+      <a class="nextEpisode" href="https://www.twitch.tv/rdvspeakers">
+        <img src="${this.url(`/img/next/card.png`)}" alt="Prochain épisode" />
+      </a>
     </div>
   `
 }

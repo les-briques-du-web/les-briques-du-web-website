@@ -11,15 +11,15 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/lostinbrittany/drowstar-com.git",
-    "https": "https://gitlab.com/lostinbrittany/drowstar-com.git",
-    "editUrl": "https://gitlab.com/lostinbrittany/drowstar-com/-/edit/master"
+    "https": "https://github.com/les-briques-du-web/les-briques-du-web-website",
+    "editUrl": "https://github.com/les-briques-du-web/les-briques-du-web-website/-/edit/master"
   },
   "author": "Horacio Gonzalez",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/lostinbrittany/drowstar-com/issues"
+    "url": "https://github.com/les-briques-du-web/les-briques-du-web-website/issues"
   },
-  "homepage": "https://gitlab.com/lostinbrittany/drowstar-com#readme",
+  "homepage": "https://rdv-speakers.fr/les-briques-du-web",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "clean-css": "^4.2.3",

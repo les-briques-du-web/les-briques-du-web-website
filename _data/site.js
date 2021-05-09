@@ -67,7 +67,7 @@ export default {
       // Heading for your most recent posts, used on home page
       headline: 'Derniers épisodes',
       // Invite the user to visit your archive of posts, used on home page
-      prompt: '… visiter des archives 👀',
+      prompt: '… visiter les archives 👀',
       // The landing page for your archive of posts
       url: 'episodes'
     },
