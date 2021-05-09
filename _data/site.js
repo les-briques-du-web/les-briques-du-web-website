@@ -33,7 +33,8 @@ export default {
     // The subtitle, slogan, or catchphrase for your site,
     // used in _includes/shortcodes/site-header
     tagline: "Emission bimensuelle autour du développement web",
-    // Puncuation between a title and subtitle,
+    when: "Toutes les deux semaines, le Mardi à 12h15",
+    // Punctuation between a title and subtitle,
     // used in _includes/shortcodes/title-tag
     separator: ' - ',
     // The link text for skip-to-content lins, used by screen readers

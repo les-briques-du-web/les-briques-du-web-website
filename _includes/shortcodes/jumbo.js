@@ -33,6 +33,7 @@ export default (eleventyConfig) =>
               alt="logo Les Briques du Web">
           <div class="inner">
             <h2>${l10n.tagline}</h2>
+            <h3>${l10n.when}</h3>
             <h3>
               <a href="https://www.twitch.tv/rdvspeakers">
                 https://www.twitch.tv/rdvspeakers
