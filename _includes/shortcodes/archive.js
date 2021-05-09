@@ -47,6 +47,8 @@ export default eleventyConfig =>
               <img src="${this.url(`/img/${item.data.name}/card.png`)}">
             </a>
           </div>
+          <div class="footer">
+          </div>
         </div>
       </article>`).join('')}
     </section>`
