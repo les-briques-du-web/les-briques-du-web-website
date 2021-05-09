@@ -7,7 +7,7 @@
 
 .jumbo {
   position: relative;
-  height: 20em;
+  height: 25em;
   width: 100%;
   display: flex;
   flex-flow: column;
