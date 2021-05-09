@@ -32,7 +32,7 @@
       emoji: "🛠️",
    },
    anecdocte_historique: {
-     name: "L'Annecdote Historique",
+     name: "L'Anecdote Historique",
      emoji: "📜", 
    }
 }
