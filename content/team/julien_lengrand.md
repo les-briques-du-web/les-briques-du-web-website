@@ -12,6 +12,9 @@ socials:
   - icon: github
     link: https://github.com/jlengrand
     name: jlengrand
+  - icon: linkedin
+    link: 'https://www.linkedin.com/in/julienlengrand/'
+    name: jlengrand
 tags: [ 'team' ]
 ---
 

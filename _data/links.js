@@ -17,5 +17,7 @@
  export default {
   anchor: 'https://anchor.fm/les-rdv-des-speakers',
   twitter: 'https://twitter.com/LesBriquesDuWeb',
-  youtube: 'https://www.youtube.com/watch?v=m-i8f-a6K4Y&list=PLEkzErZ5n2i610Wmi2tstCoTdhKyJafqY'
+  youtube: 'https://www.youtube.com/watch?v=m-i8f-a6K4Y&list=PLEkzErZ5n2i610Wmi2tstCoTdhKyJafqY',
+  spotify: 'https://open.spotify.com/show/2OKbLLelv3Q2hVZsQnBW2u?si=QdRSoGPZRXqtmVNv3pa9ew',
+  apple_podcasts: 'https://podcasts.apple.com/nl/podcast/le-rendez-vous-des-speakers/id1559843293?l=en'
 }

@@ -43,7 +43,7 @@ export default eleventyConfig =>
             <p class="no-margin">${item.data.subtitle}</p>
           </div>
           <div class="filler">          
-            <a href="${item.data.page.url}">
+            <a href="${this.url(`${item.data.page.url}`)}"> 
               <img src="${this.url(`/img/${item.data.name}/card.png`)}">
             </a>
           </div>

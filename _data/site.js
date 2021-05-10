@@ -33,7 +33,8 @@ export default {
     // The subtitle, slogan, or catchphrase for your site,
     // used in _includes/shortcodes/site-header
     tagline: "Emission bimensuelle autour du développement web",
-    // Puncuation between a title and subtitle,
+    when: "Toutes les deux semaines, le Mardi à 12h15",
+    // Punctuation between a title and subtitle,
     // used in _includes/shortcodes/title-tag
     separator: ' - ',
     // The link text for skip-to-content lins, used by screen readers
@@ -67,7 +68,7 @@ export default {
       // Heading for your most recent posts, used on home page
       headline: 'Derniers épisodes',
       // Invite the user to visit your archive of posts, used on home page
-      prompt: '… visiter des archives 👀',
+      prompt: '… visiter les archives 👀',
       // The landing page for your archive of posts
       url: 'episodes'
     },

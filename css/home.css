@@ -7,7 +7,7 @@
 
 .jumbo {
   position: relative;
-  height: 20em;
+  height: 25em;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -115,7 +115,7 @@
 .nextEpisode h2 {
   margin-bottom: 2rem;
 }
-.nextEpisode img {
+.nextEpisode a {
   max-width: min(90%, 1200px);
   margin: 0;
 }
