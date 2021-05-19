@@ -53,8 +53,6 @@ export function render(data) {
       ` : ''}
       </div>
 
-      
-
 
       <div class="chronicles">
         <p>Au programme de l'émission</p>
