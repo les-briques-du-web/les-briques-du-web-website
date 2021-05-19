@@ -44,7 +44,7 @@ export default eleventyConfig =>
           </div>
           <div class="filler">          
             <a href="${this.url(`${item.data.page.url}`)}"> 
-              <img src="${this.url(`/img/${item.data.name}/card.png`)}">
+              <img src="${this.url(`/img/${item.data.name}/card-thumb.jpg`)}">
             </a>
           </div>
         </div>

@@ -42,7 +42,7 @@ export function render(data) {
         <h2>${data.subtitle}</h2>
       </header>
       <div class="card">
-        <img src="${this.url(`/img/${data.name}/card.png`)}">
+        <img src="${this.url(`/img/${data.name}/card.jpg`)}">
         ${data.references ? `
         <div class="links">
         ${data.references
