@@ -29,5 +29,5 @@ export default eleventyConfig =>
     // return `<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍦</text></svg>">`
     // Uncomment the next line ⬇️ to enable favicons via the Real Favicon Generator
     // return `${this.fileToString('favicons/html_code.html')}`
-    return /* html */ `<link rel="icon" href="/img/favicon.png" type="image/png">`;
+    return /* html */ `<link rel="icon" href="${this.url('/img/favicon.png')}" type="image/png">`;
   })

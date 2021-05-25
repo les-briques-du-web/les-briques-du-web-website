@@ -36,15 +36,15 @@ export default eleventyConfig =>
               <time>${this.pageDate(item.data)}</time>
             </div>
             <h2 class="no-margin">
-              <a href="${item.data.page.url}"> 
+              <a href="${this.url(`${item.data.page.url}`)}"> 
                  ${item.data.title}
               </a>
             </h2>
             <p class="no-margin">${item.data.subtitle}</p>
           </div>
           <div class="filler">          
-            <a href="${item.data.page.url}">
-              <img src="${data.site.baseUrl}img/${item.data.name}/card.png">
+            <a href="${this.url(`${item.data.page.url}`)}"> 
+              <img src="${this.url(`/img/${item.data.name}/card-thumb.jpg`)}">
             </a>
           </div>
         </div>

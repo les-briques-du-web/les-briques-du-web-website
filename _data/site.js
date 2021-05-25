@@ -17,9 +17,8 @@
  */
 export default {
   // The root for the site domain (without a trailing slash)
-  baseUrl: (process.NODE_ENV == 'production') 
-      ? 'https://rdv-speakers.fr/les-briques-du-web/'
-      : '/',
+  baseUrl: 'https://rdv-speakers.fr/les-briques-du-web',
+  pathPrefix: '/les-briques-du-web',
   // Uses this locale when one is not set in content/content.11tydata.js
   defaultLocale: 'fr',
   // Localized strings and other options for Spanish (es)
@@ -28,14 +27,16 @@ export default {
     url: 'img/logos/logo.png'
   },
   fr: {
+    title: 'Les Briques du Web',
     // French as used in France
     locale: 'fr',
     // The subtitle, slogan, or catchphrase for your site,
     // used in _includes/shortcodes/site-header
     tagline: "Emission bimensuelle autour du développement web",
-    // Puncuation between a title and subtitle,
+    when: "Toutes les deux semaines, le Mardi à 12h15",
+    // Punctuation between a title and subtitle,
     // used in _includes/shortcodes/title-tag
-    separator: ' 🎲 ',
+    separator: ' - ',
     // The link text for skip-to-content lins, used by screen readers
     skipToContent: 'Aller au contenu',
     // The link text to invite users to edit a page in the project Git repository
@@ -67,15 +68,15 @@ export default {
       // Heading for your most recent posts, used on home page
       headline: 'Derniers épisodes',
       // Invite the user to visit your archive of posts, used on home page
-      prompt: '… visiter des archives 👀',
+      prompt: '… visiter les archives 👀',
       // The landing page for your archive of posts
-      url: '/episodes'
+      url: 'episodes'
     },
     team: {
-      url: '/team',
+      url: 'team',
     },
     guests: {
-      url: '/guests',
+      url: 'guests',
     },
     /*
      * Options for displaying dates in this locale

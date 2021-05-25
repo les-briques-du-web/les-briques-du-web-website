@@ -10,8 +10,8 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
  export var data = {
-  title: "Nos hôtes",
-  navTitle: 'hôtes',
+  title: "Nos convives",
+  navTitle: 'convives',
   tags: 'nav',
   weight: 3,
   layout: 'layouts/guests',
@@ -22,9 +22,12 @@
     alias: 'member',
     reverse: false,
   },
-  permalink: data => `${data.site[data.locale].guests.url }/${data.pagination.pageNumber > 0
-    ? `page-${data.pagination.pageNumber}/` 
-    : ''}index.html`,
+  permalink: function(data) {
+    return this.url(
+      `${data.site[data.locale].guests.url }/${data.pagination.pageNumber > 0
+      ? `page-${data.pagination.pageNumber}/` 
+      : ''}index.html`);
+  }
 }
 
 /**

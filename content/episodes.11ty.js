@@ -22,9 +22,11 @@
     alias: 'posts',
     reverse: true,
   },
-  permalink: data => `${data.site[data.locale].episodesArchive.url }/${data.pagination.pageNumber > 0
-    ? `page-${data.pagination.pageNumber}/` 
-    : ''}index.html`,
+  permalink: function(data) {
+    return `/episodes/${data.pagination.pageNumber > 0
+      ? `page-${data.pagination.pageNumber}/` 
+      : ''}index.html`;
+  }
 }
 
 /**

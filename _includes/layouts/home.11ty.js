@@ -24,5 +24,12 @@ export var data = {
 export function render(data) {
   return `
     ${this.jumbo(data)}
+
+    <div class="nextEpisode">    
+      <h2 >Prochain épisode:</h2>
+      <a class="nextEpisode" href="https://www.twitch.tv/rdvspeakers">
+        <img src="${this.url(`/img/next/card.jpg`)}" alt="Prochain épisode" />
+      </a>
+    </div>
   `
 }

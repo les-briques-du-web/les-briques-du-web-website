@@ -1,5 +1,4 @@
 ---
-speaker: true
 key: cecile_freyd-foucault
 name: Cécile Freyd-Foucault
 feature: true

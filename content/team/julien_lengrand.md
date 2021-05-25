@@ -1,6 +1,6 @@
 ---
 key: julien_lengrand
-name: Julien Lengrand Lambert
+name: Julien Lengrand-Lambert
 feature: true
 company:  ING
 city: Pays-Bas
@@ -11,6 +11,9 @@ socials:
     name: jlengrand
   - icon: github
     link: https://github.com/jlengrand
+    name: jlengrand
+  - icon: linkedin
+    link: 'https://www.linkedin.com/in/julienlengrand/'
     name: jlengrand
 tags: [ 'team' ]
 ---
