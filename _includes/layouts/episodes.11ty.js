@@ -67,6 +67,20 @@ export function render(data) {
                   </h3>
                   
                   ${item.title ? `<h4>${item.title}</h4>` : ''}
+                  ${item.subtitle ? `<h5>${item.subtitle}</h5>` : ''}
+
+                  ${item.guests ? 
+                    `<p>Avec ${item.guests
+                      .map((aGuest) =>{
+                        return `<a href="${this.url(`${l10n.guests.url}/${aGuest}/`)}">${
+                          guestList
+                            .find((guest) => guest.key == aGuest) ?
+                          guestList
+                            .find((guest) => guest.key == aGuest)
+                            .name.trim() : ''
+                        }</a>`;
+                      })
+                      .join(', ').replace(/, ([^,]*)$/, ' et $1')}</p>` : '' }
 
                   ${item.presenters ? 
                   `<p>Présenté par ${item.presenters
@@ -80,18 +94,6 @@ export function render(data) {
                       }</a>`; })
                     .join(', ').replace(/, ([^,]*)$/, ' et $1')}</p>` : '' }
 
-                  ${item.guests ? 
-                  `<p>Avec ${item.guests
-                    .map((aGuest) =>{
-                      return `<a href="${this.url(`${l10n.guests.url}/${aGuest}/`)}">${
-                        guestList
-                          .find((guest) => guest.key == aGuest) ?
-                        guestList
-                          .find((guest) => guest.key == aGuest)
-                          .name.trim() : ''
-                      }</a>`;
-                    })
-                    .join(', ').replace(/, ([^,]*)$/, ' et $1')}</p>` : '' }
                 </li>
               `;
             })
