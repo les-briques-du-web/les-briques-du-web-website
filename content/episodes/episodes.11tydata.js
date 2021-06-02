@@ -14,9 +14,10 @@ export default {
   // Note: The permalink value uses Nunjucks/Liquid syntax;
   // a future version of 11ty may allow for JavaScript template literals
   eleventyComputed: {
-    permalink: data => `/episodes/${data.page.fileSlug}/index.html`
+    permalink: data => `/episodes/${data.page.fileSlug}/index.html`,
+    thumbnail: data => `${data.page.fileSlug}/card.jpg`,
   },
   tags: [
     'episodes'
-  ]
+  ],
 }
