@@ -30,79 +30,81 @@ export function render(data) {
   let l10n = data.site[data.locale];
 
   return `
-    <article class="episode_details">
-      <header class="article-header">
-        <div class="episode">
-          <div class="number"> 
-            ${data.name}
+    <div class="episode_container">
+      <article class="episode_details">
+        <header class="article-header">
+          <div class="episode">
+            <div class="number"> 
+              ${data.name}
+            </div>
+            <time>${this.pageDate(data)}</time>
           </div>
-          <time>${this.pageDate(data)}</time>
+          <h1>${data.title}</h1>
+          <h2>${data.subtitle}</h2>
+        </header>
+        <div class="card">
+          <img src="${this.url(`/img/${data.name}/card.jpg`)}">
+          ${data.references ? `
+          <div class="links">
+          ${data.references
+            .map((ref) => {
+              return `<div class="link"><p>${ref.msg}</p> ${this.socialIcons(ref)}</div>`;
+            }).join('\n') }
+          </div>
+        ` : ''}
         </div>
-        <h1>${data.title}</h1>
-        <h2>${data.subtitle}</h2>
-      </header>
-      <div class="card">
-        <img src="${this.url(`/img/${data.name}/card.jpg`)}">
-        ${data.references ? `
-        <div class="links">
-        ${data.references
-          .map((ref) => {
-            return `<div class="link"><p>${ref.msg}</p> ${this.socialIcons(ref)}</div>`;
-          }).join('\n') }
-        </div>
-      ` : ''}
-      </div>
 
 
-      <div class="chronicles">
-        <p>Au programme de l'émission</p>
-        <ul>
-        ${
-          data.chronicles ? data.chronicles
-            .map((item) => {
-              return `
-                <li>
-                  <h3 class="chronicle_name">
-                    ${data.labels[item.key].emoji} ${data.labels[item.key].name}
-                  </h3>
-                  
-                  ${item.title ? `<h4>${item.title}</h4>` : ''}
-                  ${item.subtitle ? `<h5>${item.subtitle}</h5>` : ''}
+        <div class="chronicles">
+          <p>Au programme de l'émission</p>
+          <ul>
+          ${
+            data.chronicles ? data.chronicles
+              .map((item) => {
+                return `
+                  <li>
+                    <h3 class="chronicle_name">
+                      ${data.labels[item.key].emoji} ${data.labels[item.key].name}
+                    </h3>
+                    
+                    ${item.title ? `<h4>${item.title}</h4>` : ''}
+                    ${item.subtitle ? `<h5>${item.subtitle}</h5>` : ''}
 
-                  ${item.guests ? 
-                    `<p>Avec ${item.guests
-                      .map((aGuest) =>{
-                        return `<a href="${this.url(`${l10n.guests.url}/${aGuest}/`)}">${
-                          guestList
-                            .find((guest) => guest.key == aGuest) ?
-                          guestList
-                            .find((guest) => guest.key == aGuest)
+                    ${item.guests ? 
+                      `<p>Avec ${item.guests
+                        .map((aGuest) =>{
+                          return `<a href="${this.url(`${l10n.guests.url}/${aGuest}/`)}">${
+                            guestList
+                              .find((guest) => guest.key == aGuest) ?
+                            guestList
+                              .find((guest) => guest.key == aGuest)
+                              .name.trim() : ''
+                          }</a>`;
+                        })
+                        .join(', ').replace(/, ([^,]*)$/, ' et $1')}</p>` : '' }
+
+                    ${item.presenters ? 
+                    `<p>Présenté par ${item.presenters
+                      .map((presenter) =>{
+                        return `<a href="${this.url(`/${l10n.team.url}/${presenter}/`)}">${
+                          teamMembers
+                            .find((member) => member.key == presenter) ?
+                          teamMembers
+                            .find((member) => member.key == presenter)
                             .name.trim() : ''
-                        }</a>`;
-                      })
+                        }</a>`; })
                       .join(', ').replace(/, ([^,]*)$/, ' et $1')}</p>` : '' }
 
-                  ${item.presenters ? 
-                  `<p>Présenté par ${item.presenters
-                    .map((presenter) =>{
-                      return `<a href="${this.url(`/${l10n.team.url}/${presenter}/`)}">${
-                        teamMembers
-                          .find((member) => member.key == presenter) ?
-                        teamMembers
-                          .find((member) => member.key == presenter)
-                          .name.trim() : ''
-                      }</a>`; })
-                    .join(', ').replace(/, ([^,]*)$/, ' et $1')}</p>` : '' }
-
-                </li>
-              `;
-            })
-            .join('\n') 
-          : '' 
-        }
-        </ul>
-      </div>
-      </div>
-    </article>
+                  </li>
+                `;
+              })
+              .join('\n') 
+            : '' 
+          }
+          </ul>
+        </div>
+        </div>
+      </article>
+    </div>
   `
 }

@@ -399,6 +399,15 @@ article.team .socials a {
   overflow: hidden;
 }
 
+div.episode_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+article.episode_details {
+  max-width: 960px;
+}
+
 article.episode_details .card {
   max-width: 840px;
 }
