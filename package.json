@@ -1,6 +1,6 @@
 {
   "name": "les-briques-du-web",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "*Les Briques du Web* est une emission bimensuelle autour du développement web en général et des ses briques de base : HTML, CSS, JS, les standard web, l'accessibilité, le buildless, ... ",
   "main": "index.js",
   "scripts": {
